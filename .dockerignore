@@ -1,0 +1,7 @@
+*
+!libinjection
+!binding.gyp
+!package-lock.json
+!package.json
+!is_sqli.cc
+!index.js

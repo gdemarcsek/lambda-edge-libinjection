@@ -1,0 +1,16 @@
+{
+  "name": "hello_world",
+  "version": "0.0.0",
+  "description": "Node.js Addons Example #1",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "node-addon-api": "^7.0.0",
+    "simdjson": "0.9.2"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "gypfile": true
+}
