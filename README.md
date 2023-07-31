@@ -21,3 +21,6 @@ In a separate terminal:
 curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d @viewer-request.json
 {"statusCode":403,"body":"<html><head><title>Forbidden</title></head><body>Forbidden</body></html>"}⏎
 ```
+
+To deploy, you will need to create a ZIP archive of the lambda inside the container and deploy that because L@E does not support Docker images. 
+

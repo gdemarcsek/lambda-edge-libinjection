@@ -7,9 +7,9 @@ const MAX_JSON_DEPTH    = 5
 
 function denied(accept_header) {
     if (accept_header.toLowerCase() === "application/json") {
-        return({statusCode: 403, body: JSON.stringify({"result": "error", "status": "Forbidden"})});
+        return({status: '403', body: JSON.stringify({"result": "error", "status": "Forbidden"})});
     } else {
-        return({statusCode: 403, body: '<html><head><title>Forbidden</title></head><body>Forbidden</body></html>'});
+        return({status: '403', body: '<html><head><title>Forbidden</title></head><body>Forbidden</body></html>'});
     }
 }
 
